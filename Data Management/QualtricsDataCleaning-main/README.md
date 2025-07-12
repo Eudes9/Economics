@@ -1,27 +1,35 @@
-# R Tutorial: Cleaning and filtering data from Qualtrics surveys, and creating new variables in the dataframe
+# R Tutorial: Cleaning and Filtering Data from Qualtrics Surveys, and Creating New Variables in the Dataframe
 
-By Ángela Jiang-Wang
+By Jean-Eude
 
-#R version used: 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out"
+**R version used**: 4.0.3 (2020-10-10) — "Bunny-Wunnies Freak Out"  
+**Latest update**: July 12, 2025
 
-#Latest update: December 29th, 2021
+---
 
-Hi all, many Qualtrics surveys used for experiments produce really similar output datasets.
+Hi everyone! If you've worked with Qualtrics survey exports before, you've probably noticed that the datasets they produce can look pretty messy and repetitive across projects.
 
-I will share with you my preferred codes and their respective explanations for data cleaning and filtering, and also for creating new variables in the dataframe from existing data with functions and logical operators.
+In this tutorial, I’m sharing the R code I regularly use—along with clear explanations—for:
+- Cleaning and filtering Qualtrics survey data
+- Creating new variables from existing ones using functions and logical conditions
 
-As often happens with coding, there are many different ways of doing one same task in R. These are the codes I like using and that normally work for me.
+As with most things in R, there are many ways to accomplish the same task. These are just the methods that work well for me, and I hope they'll be useful for you too—so you don’t have to spend hours digging through forums for basic tasks like I once did.
 
-Hopefully this may help you so you don't get too crazy looking in forums and all over the internet like me for doing some really simple tasks.
+---
 
-Before starting, I'd like to tell you that you can make data cleaning much more efficient and easier with the right survey design in Qualtrics.
-For instance, you can edit how you want your variables to be named in the output dataset and how the values of each variable should be coded.
-Try playing with features such as Question names, Recode values, Question export tags (for questions with many items such as matrices) in order to produce a more "refined" dataset from Qualtrics.
+### 💡 Pro tip:
+You can save yourself a lot of cleaning work by taking full advantage of **Qualtrics survey design features**. That includes:
+- Naming your variables clearly
+- Recoding response values properly
+- Using export tags (especially for matrix-type questions)
 
-I will provide codes with step-by-step explanations for cleaning an "unrefined" dataset, that is to say, for a case where the aforementioned features are not exploited. 
-Note that with a "refined" dataset, you will use really similar codes but just skipping some steps.
+Doing this can help you export a cleaner, more “refined” dataset straight from Qualtrics.
 
+But since that's not always possible (especially if you're working with legacy data), this guide focuses on cleaning **unrefined** exports. If your data is already tidy, you’ll still find the code useful—just skip the steps you don’t need.
 
-If you have any questions or comments, feel free to reach out to me in Twitter: @angyjiwa
+---
 
-Your feedback is always welcome!
+If you have any questions, suggestions, or just want to share feedback, feel free to connect with me!
+
+Thanks for stopping by,  
+**Jean-Eude**
